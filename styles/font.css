@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "DESTROY_";
+  src: url("/fonts/DESTROY_.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Synthetique";
+  src: url("/fonts/Synthetique.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Kingthings";
+  src: url("/fonts/Kingthings_Xstitch.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "BPdots";
+  src: url("/fonts/BPdots.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "BPdotsLight";
+  src: url("/fonts/BPdotsLight.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Geo";
+  src: url("/fonts/Geo.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Bungee-Regular";
+  src: url("/fonts/Bungee-Regular.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Bungee-Hairline";
+  src: url("/fonts/Bungee-Hairline.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "ExpletusSans-BoldItalic";
+  src: url("/fonts/ExpletusSans-BoldItalic.ttf") format("truetype");
+  font-style: normal;
+}

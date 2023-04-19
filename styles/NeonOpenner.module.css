@@ -1,0 +1,122 @@
+.openner{
+  position: absolute;
+  height: calc(100% + 5px);
+  width: calc(100% + 5px);
+  background-color: black;
+  overflow: hidden;
+  animation-name: openner;
+  animation-duration: 12s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: forwards;
+}
+@keyframes openner {
+  0%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.neonTop{
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, red);
+  animation-name: neonTop;
+  animation-duration: 8.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.60s;
+}
+@keyframes neonTop {
+  0%{
+    left: -100%;
+  }
+  95%{
+    left: -100%;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+.neonBottom{
+  position: absolute;
+  bottom: 0%;
+  right: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, red);
+  animation-name: neonBottom;
+  animation-duration: 8.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.20s;
+}
+@keyframes neonBottom {
+  0%{
+    right: -100%;
+  }
+  95%{
+    right: -100%;
+  }
+  100%{
+    right: 100%;
+  }
+}
+
+.neonRight{
+  position: absolute;
+  top: -100%;
+  right: 0%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, red);
+  animation-name: neonRight;
+  animation-duration: 8.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes neonRight {
+  0%{
+    top: -100%;
+  }
+  95%{
+    top: -100%;
+  }
+  100%{
+    top: 100%;
+  }
+}
+
+.neonLeft{
+  position: absolute;
+  bottom: -100%;
+  left: 0%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(360deg, transparent, red);
+  animation-name: neonLeft;
+  animation-duration: 8.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.40s;
+}
+@keyframes neonLeft {
+  0%{
+    bottom: -100%;
+  }
+  95%{
+    bottom: -100%;
+  }
+  100%{
+    bottom: 100%;
+  }
+}

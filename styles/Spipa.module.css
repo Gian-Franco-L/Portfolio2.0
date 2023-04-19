@@ -1,0 +1,713 @@
+
+.dronBody{
+  position: absolute;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  left: calc(50% - 125px);
+  top: -30%;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: linear-gradient(#2D3436 , #D3D3D3);
+}
+.dronBodyApear{
+  animation-name: dronApearMovement;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes dronApearMovement {
+  0%{
+    top: -30%;
+  }
+  100%{
+    top: 35%;
+  }
+}
+.dronShadow{
+  position: absolute;
+  left: calc(50% - 250px);
+  height: 600px;
+  width: 500px;
+  background-color: black;
+}
+.dronShadowApear{
+  animation-name: dronShadowApearMovement;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes dronShadowApearMovement {
+  0%{
+    top: 0%;
+    opacity: .8;
+  }
+  80%{
+    opacity: .8;
+  }
+  100%{
+    top: -70%;
+    opacity: 0;
+  }
+}
+
+.radar{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: -45%;
+  left: 29%;
+  background-image: url('../public/radara.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.radar::before{
+  content: "";
+  position: absolute;
+  height: 20%;
+  width: 72%;
+  left: 6.3%;
+  bottom: -15%;
+  background-color: #374043;
+  border-radius: 10px;
+}
+
+.dronEyelidContainer{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  clip-path: circle(45% at 50% 50%);
+  background-color: transparent;
+}
+
+.dronSclera{
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.dronRedIris{
+  position: absolute;
+  height: 44%;
+  width: 44%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 20px 7px rgb(255, 0, 0);
+}
+
+.dronRedPupilla{
+  position: absolute;
+  height: 35%;
+  width: 35%;
+  border-radius: 50%;
+  background: radial-gradient(black 50%, rgb(255, 0, 0));
+  box-shadow: 0px 0px 10px 10px rgb(255, 0, 0); 
+}
+
+.dronBlackPupilla{
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 10px rgb(255, 0, 0);
+  background: radial-gradient(black 40%, rgb(255, 0, 0));
+}
+
+.dronEyelid{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #2D3436;
+  background: radial-gradient(#D3D3D3 , #373c3d);
+}
+.dronEyelidOpen{
+  animation-name: openEye;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes openEye {
+  0%{
+    top: 0%;
+  }
+  80%{
+    top: 0%;
+  }
+  100%{
+    top: -75%;
+  }
+}
+
+.dronBlackFilter{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: radial-gradient(rgba(0, 0, 0, 0) 20%, black);
+}
+
+.rightStick{
+  position: absolute;
+  height: 5%;
+  width: 50%;
+  right: -44%;
+  top: 45%;
+  background: radial-gradient(#454545 20%, #000000);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.leftStick{
+  position: absolute;
+  height: 5%;
+  width: 50%;
+  left: -44%;
+  top: 45%;
+  background: radial-gradient(#454545 20%, #000000);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.rightTopWingBorder{
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  right: -42%;
+  top: 5%;
+  background-color: black;
+  clip-path: inset(0% 0% 0% 0%);
+  transform: rotate(-90deg);
+}
+.rightTopWing{
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  background: radial-gradient(#454545 40%, #000000);
+}
+
+.rightBottomWingBorder{
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  right: -42%;
+  top: 49.8%;
+  background-color: black;
+  clip-path: inset(0% 0% 0% 0%);
+}
+.rightBottomWing{
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  background: radial-gradient(#454545 40%, #000000);
+}
+
+.leftTopWingBorder{
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  left: -42%;
+  top: 5%;
+  background-color: black;
+  clip-path: inset(0% 0% 0% 0%);
+  transform: rotate(180deg);
+}
+.leftTopWing{
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  background: radial-gradient(#454545 40%, #000000);
+}
+.leftBottomWingBorder{
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  left: -42%;
+  top: 50%;
+  background-color: black;
+  clip-path: inset(0% 0% 0% 0%);
+  transform: rotate(90deg);
+}
+.leftBottomWing{
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  background: radial-gradient(#454545 40%, #000000);
+}
+
+.pointer{
+  cursor: pointer;
+}
+.pointerTimer{
+  animation-name: cursor;
+  animation-duration: 33s;
+}
+
+@keyframes cursor {
+  100%{
+    cursor: pointer;
+  }
+}
+
+.verticalLineOne{
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  top: 19%;
+  background: radial-gradient(#ffffff, #000000 50%);
+}
+.verticalLineOne::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 800%;
+  background: radial-gradient(#ffffff, #000000 50%);
+}
+
+.verticalLineTwo{
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  top: 60%;
+  background: radial-gradient(#ffffff, #000000 50%);
+  
+}
+.verticalLineTwo::before{ 
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 800%;
+  background: radial-gradient(#ffffff, #000000 50%);
+}
+
+.horizontalLineOne{
+  position: absolute;
+  height: 0%;
+  width: 2px;
+  right: 20%;
+  background: radial-gradient(#ffffff, #000000 50%);
+}
+.horizontalLineOne::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  right: 800%;
+  background: radial-gradient(#ffffff, #000000 50%);
+}
+
+.horizontalLineTwo{
+  position: absolute;
+  height: 0%;
+  width: 2px;
+  top: 0%;
+  right: 60%;
+  background: radial-gradient(#ffffff, #000000 50%);
+  
+}
+.horizontalLineTwo::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  right: 800%;
+  background: radial-gradient(#ffffff, #000000 50%);
+}
+
+.verticalAnimated{
+  animation-name: lineUp;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.horizontalAnimated{
+  animation-name: lineToTheSide;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes lineUp{
+  0%{
+    width: 100%;
+  }
+  70%{
+    width: 100%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+@keyframes lineToTheSide{
+  0%{
+    height: 100%;
+  }
+  70%{
+    height: 100%;
+  }
+  100%{
+    height: 0%;
+  }
+}
+
+.number{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 2.3rem;
+  color: red;
+  font-family: 'DESTROY_';
+}
+
+.three{
+  transform: rotate(90deg);
+  
+}
+.threeOpacity{
+  animation-name: numberThreeOpacity;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.four{
+  transform: rotate(0deg);
+}
+.fourOpacity{
+  animation-name: numberFourOpacity;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.one{
+  transform: rotate(180deg);
+}
+.oneOpacity{
+  animation-name: numberOneOpacity;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.two{
+  transform: rotate(-90deg);
+}
+.twoOpacity{
+  animation-name: numberTwoOpacity;
+  animation-duration: 13s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes numberThreeOpacity {
+  0%{
+    opacity: .2;
+  }
+  85%{
+    opacity: .2;
+  }
+  90%{
+    opacity: 1;
+  }
+  95%{
+    opacity: .7;
+  }
+  100%{
+    opacity: .8;
+  }
+}
+@keyframes numberFourOpacity {
+  0%{
+    opacity: .2;
+  }
+  90%{
+    opacity: .2;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: .8;
+  }
+}
+@keyframes numberOneOpacity {
+  0%{
+    opacity: .2;
+  }
+  75%{
+    opacity: .2;
+  }
+  80%{
+    opacity: 1;
+  }
+  85%{
+    opacity: .7;
+  }
+  100%{
+    opacity: .8;
+  }
+}
+@keyframes numberTwoOpacity {
+  0%{
+    opacity: .2;
+  }
+  80%{
+    opacity: .2;
+  }
+  85%{
+    opacity: 1;
+  }
+  90%{
+    opacity: .7;
+  }
+  100%{
+    opacity: .8;
+  }
+}
+
+.eyeSquare{
+  animation-name: eyeSquare;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes eyeSquare {
+  0%{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 10px rgb(255, 0, 0);
+    background: radial-gradient(black 40%, rgb(255, 0, 0));
+  }
+  12.5%{
+    height: 20%;
+    width: 20%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+  }
+  30%{
+    height: 20%;
+    width: 20%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+  }
+  37.5%{
+    height: 40%;
+    width: 40%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+  }
+  50%{
+    height: 40%;
+    width: 60%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+    opacity: 1;
+  }
+  100%{
+    height: 40%;
+    width: 60%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+    opacity: 0;
+  }
+}
+.eyeCircle{
+  animation-name: eyeCircle;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes eyeCircle {
+  0%{
+    height: 40%;
+    width: 60%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+    opacity: 0;
+  }
+  50%{
+    height: 40%;
+    width: 60%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+    opacity: 1;
+  }
+  62.7%{
+    height: 40%;
+    width: 40%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+  }
+  70%{
+    height: 20%;
+    width: 20%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+  }
+  87.5%{
+    height: 20%;
+    width: 20%;
+    border-radius: 0%;
+    box-shadow: 0px 0px 2px 3px rgb(255, 0, 0);
+    background: linear-gradient(black, black);
+  }
+  100%{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 10px rgb(255, 0, 0);
+    background: radial-gradient(black 40%, rgb(255, 0, 0));
+  }
+}
+
+.RedPupillaIn{
+  animation-name: RedPupillaIn;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes RedPupillaIn {
+  25%{
+    height: 35%;
+    width: 35%;
+  }
+  75%{
+    height: 0%;
+    width: 0%;
+  }
+  99%{
+    height: 0%;
+    width: 0%;
+    opacity: 1;
+  }
+  100%{
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+  }
+}
+.RedPupillaOut{
+  animation-name: RedPupillaOut;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes RedPupillaOut {
+  0%{
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+  }
+  49%{
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+  }
+  50%{
+    height: 0%;
+    width: 0%;
+    opacity: 1;
+  }
+  67.5%{
+    height: 0%;
+    width: 0%;
+  }
+  87.5%{
+    height: 35%;
+    width: 35%;
+  }
+  100%{
+    height: 35%;
+    width: 35%;
+  }
+}
+
+.redIrisIn{
+  animation-name: redIrisIn;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes redIrisIn {
+  25%{
+    height: 44%;
+    width: 44%;
+  }
+  75%{
+    height: 0%;
+    width: 0%;
+  }
+  99%{
+    height: 0%;
+    width: 0%;
+    opacity: 1;
+  }
+  100%{
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+  }
+}
+.redIrisOut{
+  animation-name: redIrisOut;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes redIrisOut {
+  0%{
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+  }
+  49%{
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+  }
+  50%{
+    height: 0%;
+    width: 0%;
+    opacity: 1;
+  }
+  67.5%{
+    height: 0%;
+    width: 0%;
+  }
+  87.5%{
+    height: 44%;
+    width: 44%;
+  }
+  100%{
+    height: 44%;
+    width: 44%;
+  }
+}

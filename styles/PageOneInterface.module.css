@@ -65,7 +65,7 @@
   color: red;
 }
 
-@keyframes opennerInverse {
+@keyframes openerInverse {
   0%{
     opacity: 0;
   }

@@ -33,7 +33,7 @@
 .mainContainerDesapear{
   position: relative;
   display: flex;
-  justify-content: space-between;  
+  flex-direction: column;
   height: 95vh;
   width: 95vw;
   background-color: black;
@@ -53,6 +53,15 @@
     opacity: 0;
     visibility: hidden
   }
+}
+
+.mainContainerDesapear h1{
+  position: absolute;
+  width: 310px;
+  color: white;
+  font-size: 2.5rem;
+  left: calc(50% - 155px);
+  margin-top: .7%;
 }
 
 .backButton{
@@ -175,13 +184,13 @@
   height: 100%;
   width: 100%;
   background-color: black;
-  animation-name: openner;
+  animation-name: opener;
   animation-duration: 12s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
-@keyframes openner {
+@keyframes opener {
   0%{
     opacity: 1;
   }

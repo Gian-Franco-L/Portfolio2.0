@@ -1,0 +1,210 @@
+.mainContainerApear{
+  position: relative;
+  display: flex;
+  justify-content: space-between;  
+  height: 95vh;
+  width: 95vw;
+  background-color: black;
+  opacity: 0;
+  box-shadow: 0px 0px 5px 5px rgb(255, 0, 0);
+  animation-name: interfaceApear;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes interfaceApear {
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.mainContainerApear h1{
+  position: absolute;
+  width: 310px;
+  color: white;
+  font-size: 2.5rem;
+  left: calc(50% - 155px);
+  margin-top: .7%;
+}
+
+.mainContainerDesapear{
+  position: relative;
+  display: flex;
+  justify-content: space-between;  
+  height: 95vh;
+  width: 95vw;
+  background-color: black;
+  opacity: 0;
+  box-shadow: 0px 0px 5px 5px rgb(255, 0, 0);
+  animation-name: interfaceApear;
+  animation-name: mainContainerOut;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes mainContainerOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    visibility: hidden
+  }
+}
+.mainContainerDesapear h1{
+  position: absolute;
+  width: 310px;
+  color: white;
+  font-size: 2.5rem;
+  left: calc(50% - 155px);
+  margin-top: .7%;
+}
+
+.backButton{
+  position: absolute;
+  height: 35px;
+  margin-left: 1%;
+  margin-top: .7%;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  animation-name: openerInverse;
+  animation-duration: 12s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: forwards;
+}
+.backButton:hover{
+  color: red;
+}
+
+@keyframes openerInverse {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.Tittle{
+  animation-name: openerInverse;
+  animation-duration: 12s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: forwards;
+}
+
+.yearsContainer{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.yearsContainer h3{
+  color: white;
+}
+
+.x19x20{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 150px;
+  width: 95%;
+  border: 2px solid red;
+}
+
+
+.x21x22{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 350px;
+  width: 95%;
+  border: 2px solid red;
+}
+
+.x23{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 180px;
+  width: 95%;
+  border: 2px solid red;
+}
+
+.word{
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  right: 10px;
+  text-align: center;
+  color: #B4B4B4;
+  background-color: black;
+  cursor: pointer;
+}
+.word:hover{
+  color: red;
+}
+
+.wordOpacity{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  animation-name: opener;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.borderWord{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  animation-name: opener;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opener {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.x19x20Word{
+  width: 110px;
+}
+
+.x21x22Word{
+  width: 110px;
+}
+
+.x23Word{
+  width: 60px;
+}

@@ -1,0 +1,58 @@
+.mainContainer{
+  display: inline-block;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: clamp(.7rem, 2.8vw, 1.2rem);
+  animation: scrolling;
+  /* animation-duration: 1.5s;
+  animation-delay: 20s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; */
+}
+@keyframes scrolling {
+  from { top: 0; transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(0, -10%, 0); }
+}
+.skipButton{
+  position: absolute;
+  right: 5%;
+  height: 5%;
+  width: 10%;
+  margin-top: 2%;
+  font-size: clamp(.5rem, 1vw, 1.2rem);
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(150, 0, 0);
+}
+.skipButton:hover{
+  cursor: pointer;
+  box-shadow: 0 0 12px rgb(150, 0, 0);
+}
+.disapearText{
+  animation-name: disapearText;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes disapearText{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.3;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}

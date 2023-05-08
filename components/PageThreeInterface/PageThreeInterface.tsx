@@ -83,7 +83,7 @@ export default function PageThreeInterface({ redIris, redPupilla, blackPupilla }
             </div>
           </div>
           <h3>Finalizacion del e-commerce.</h3>
-          <h3>Inicion de mi portfolio 2.0, curriculum y perfil de linkedin.</h3>
+          <h3>Inicio de mi portfolio 2.0, curriculum y perfil de linkedin.</h3>
           <h3>Preparación para primeras entrevistas.</h3>
         </div>
       </div>

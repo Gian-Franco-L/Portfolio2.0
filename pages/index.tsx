@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Intro from '../components/Intro/Intro'
+import styled from 'styled-components'
 
 export default function Home() {
   return (
@@ -10,7 +12,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <BackgroundBlack>
+          <Intro />
+        </BackgroundBlack>
       </main>
     </>
   )
 }
+
+const BackgroundBlack = styled.div`
+  background-color: black;
+`
